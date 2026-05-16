@@ -59,21 +59,18 @@ main {
 
 #products-list {
     display: grid;
-    /* Автоматически создает колонки шириной минимум 180px, максимум 1fr */
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));    
     gap: 20px;          
     padding: 20px;
     width: 100%;
 }
 .product-card {
-    /* Удаляем width: 15%, так как сетка сама управляет шириной */
     width: 100%; 
-    padding: 15px; /* Немного увеличим внутренний отступ для красоты */
+    padding: 15px;
     background-color: #fafafa;
-    border: solid 1px #e0e0e0; /* Сделаем рамку чуть мягче */
+    border: solid 1px #e0e0e0;
     border-radius: 15px;
     text-align: center;
-    /* Позволяет элементам внутри карточки красиво распределяться */
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -83,13 +80,11 @@ main {
     background-color: #ffa023;
     border-radius: 20px;
     border: solid 1px #db8719;
-    width: 100%; /* На мобильных кнопка на всю ширину карточки удобнее */
-    margin-top: 15px; /* Отступ сверху до текста */
+    width: 100%;
+    margin-top: 15px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
-
 
 #products-list-basket {
     display: grid;
